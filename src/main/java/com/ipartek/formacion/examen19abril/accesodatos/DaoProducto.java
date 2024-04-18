@@ -1,10 +1,7 @@
 package com.ipartek.formacion.examen19abril.accesodatos;
 
-import com.ipartek.formacion.examen19abril.dtos.ClienteDto;
-import com.ipartek.formacion.examen19abril.dtos.ProductoDto;
+import com.ipartek.formacion.examen19abril.entidades.Producto;
 
-public interface DaoProducto extends Dao<ProductoDto> {
-
-	Iterable<ClienteDto> alumnos(Long id);
+public interface DaoProducto extends Dao<Producto> {
 
 }
