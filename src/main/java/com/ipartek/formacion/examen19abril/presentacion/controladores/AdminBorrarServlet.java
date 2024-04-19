@@ -19,8 +19,8 @@ public class AdminBorrarServlet extends HttpServlet {
 			throws ServletException, IOException {
 		String sId=request.getParameter("id");
 		Long id = Long.valueOf(sId);
-		Globales.DAO_PRODUCTO.borrar(id);
+		Globales.DAO_LIBRO.borrar(id);
 		
-		response.sendRedirect(request.getContextPath() + "/admin/productos");
+		response.sendRedirect(request.getContextPath() + "/admin/libros");
 	}
 }

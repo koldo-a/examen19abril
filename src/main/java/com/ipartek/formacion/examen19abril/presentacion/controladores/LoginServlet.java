@@ -27,7 +27,7 @@ public class LoginServlet extends HttpServlet {
 		if("admin@email.net".equals(email) && "contra".equals(password)) {
 			request.getSession().setAttribute("usuario", email);
 			
-			response.sendRedirect(request.getContextPath() + "/admin/productos");
+			response.sendRedirect(request.getContextPath() + "/admin/libros");
 			
 			return;
 		}
