@@ -2,8 +2,9 @@
 	pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/vistas/includes/cabecera2.jsp"%>
 <main class="container">
-
-	<form action="admin/libro" method="post">
+<p>${errores}</p>
+<p>${libro.precio}</p>
+	<form novalidate action="admin/libro" method="post">
 		<div class="row mb-3">
 			<label for="id" class="col-sm-2 col-form-label">Id</label>
 			<div class="col-sm">

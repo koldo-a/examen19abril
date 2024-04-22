@@ -19,7 +19,7 @@ public class Libro {
 	
     @NotNull
     @DecimalMin(value = "0.0", inclusive = false)
-    @Digits(integer=5, fraction=2)
+    @Digits(integer=5, fraction=2, message = "máximo 2 decimales")
     private BigDecimal precio;
 	
     @Min(value = 0, message = "El descuento debe ser mayor o igual a 0")
